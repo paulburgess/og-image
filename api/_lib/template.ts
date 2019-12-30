@@ -107,24 +107,27 @@ function getCss(theme: string, fontSize: string) {
   }
 
   /* Earth logo */
-  .image-wrapper img:first-child {
+  .image-wrapper img[class*=logo.svg] {
     top:0;
     left:0;
+    width: 400px;
+    height: 400px;
   }
 
   /* Event/artist logo */
-  .image-wrapper img:last-child {
+  .image-wrapper img {
     border-radius: 50%;
-    width: 800px;
-    height: 800px;
-    top:-20px;
-    right:-20px;
+    width: 1400px;
+    height: 1400px;
+    top:-200px;
+    right:-200px;
   }
 
     .heading {
 
         font-family: 'Arial', sans-serif;
-        font-size: ${sanitizeHtml(fontSize)};
+        /* font-size: ${sanitizeHtml(fontSize)}; */
+        font-size: 200px;
         font-style: normal;
         color: ${foreground};
         line-height: 100%;
