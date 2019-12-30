@@ -207,7 +207,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
         fontSize = '60px',
         theme = 'light',
         md = true,
-        text = '**Bat for Lashes** Live',
+        text = '**Bat for Lashes**<br>9th Jan 2020',
         images=[imageLightOptions[0].value],
         widths=[],
         heights=[],
