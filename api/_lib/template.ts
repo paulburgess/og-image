@@ -110,7 +110,7 @@ function getCss(theme: string, fontSize: string) {
   /* Earth logo */
   .image-wrapper img:nth-child(1) {
     top:0;
-    left:0;
+    left:-40px;
     width: 400px;
     height: 400px;
   }
@@ -130,7 +130,7 @@ function getCss(theme: string, fontSize: string) {
 
         font-family: 'Arial', sans-serif;
         /* font-size: ${sanitizeHtml(fontSize)}; */
-        font-size: 120px;
+        font-size: 90px;
         font-style: normal;
         color: ${foreground};
         line-height: 100%;
