@@ -163,6 +163,7 @@ const widthOptions = [
     { text: '250', value: '250' },
     { text: '300', value: '300' },
     { text: '350', value: '350' },
+    { text: '600', value: '600' },
 ];
 
 const heightOptions = [
@@ -174,6 +175,7 @@ const heightOptions = [
     { text: '250', value: '250' },
     { text: '300', value: '300' },
     { text: '350', value: '350' },
+    { text: '600', value: '600' },
 ];
 
 interface AppState extends ParsedRequest {
@@ -202,10 +204,10 @@ const App = (_: any, state: AppState, setState: SetState) => {
     };
     const {
         fileType = 'png',
-        fontSize = '100px',
+        fontSize = '60px',
         theme = 'light',
         md = true,
-        text = '**Hello** World',
+        text = '**Bat for Lashes** Live',
         images=[imageLightOptions[0].value],
         widths=[],
         heights=[],
