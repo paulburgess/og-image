@@ -167,6 +167,6 @@ function getImage(src: string, width ='auto', height = '225') {
     />`
 }
 
-function getPlusSign(i: number) {
-    return i === 0 ? '' : '<div class="plus">+</div>';
-}
+// function getPlusSign(i: number) {
+//     return i === 0 ? '' : '<div class="plus">+</div>';
+// }
