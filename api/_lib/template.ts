@@ -48,10 +48,6 @@ function getCss(theme: string, fontSize: string) {
         background: #FFF;
         height: 100vh;
         width:100%;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
         position:relative;
         margin:0;
     }
@@ -132,7 +128,7 @@ export function getHtml(parsedReq: ParsedRequest) {
 
 
 
-            <div class=image-wrapper">
+            <div class="image-wrapper">
 
                 ${images.map((img, i) =>
                     //getPlusSign(i) + getImage(img, widths[i], heights[i])
@@ -141,7 +137,7 @@ export function getHtml(parsedReq: ParsedRequest) {
 
             </div>
 
-            <h1>Earthackney</h1>
+
             <div class="heading">${emojify(
                 md ? marked(text) : sanitizeHtml(text)
             )}
