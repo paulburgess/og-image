@@ -50,6 +50,9 @@ function getCss(theme: string, fontSize: string) {
         width:100%;
         position:relative;
         margin:60px;
+        display:flex;
+        justify-content: flex-start;
+        align-items: flex-end;
     }
 
     code {
@@ -98,18 +101,33 @@ function getCss(theme: string, fontSize: string) {
     }
 
 
-  .image-wrapper img {
-    width: 400px;
-    height: 400px;
+  .image-wrapper img  {
+  position:absolute;
+
+  }
+
+  /* Earth logo */
+  .image-wrapper img:first-child {
+    top:0;
+    left:0;
+  }
+
+  /* Event/artist logo */
+  .image-wrapper img:last-child {
     border-radius: 50%;
+    width: 800px;
+    height: 800px;
+    top:-20px;
+    right:-20px;
   }
 
     .heading {
+
         font-family: 'Arial', sans-serif;
         font-size: ${sanitizeHtml(fontSize)};
         font-style: normal;
         color: ${foreground};
-        line-height: 1.8;
+        line-height: 100%;
     }`;
 }
 
