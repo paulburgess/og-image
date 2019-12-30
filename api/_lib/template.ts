@@ -14,12 +14,12 @@ const mono = readFileSync(`${__dirname}/../_fonts/Vera-Mono.woff2`).toString('ba
 function getCss(theme: string, fontSize: string) {
     let background = 'white';
     let foreground = 'black';
-    let radial = 'lightgray';
+  //  let radial = 'lightgray';
 
     if (theme === 'dark') {
         background = 'black';
         foreground = 'white';
-        radial = 'dimgray';
+  //      radial = 'dimgray';
     }
     return `
     @font-face {
@@ -45,6 +45,8 @@ function getCss(theme: string, fontSize: string) {
 
     body {
         background: ${background};
+      
+        background-size: 100px 100px;
         height: 100vh;
         display: flex;
         text-align: center;
