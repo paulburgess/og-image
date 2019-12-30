@@ -88,7 +88,7 @@ function getCss(theme: string, fontSize: string) {
     }
 
     .spacer {
-        margin: 150px;
+        margin: 50px;
     }
 
     .emoji {
@@ -97,6 +97,22 @@ function getCss(theme: string, fontSize: string) {
         margin: 0 .05em 0 .1em;
         vertical-align: -0.1em;
     }
+
+    .main-wrapper {
+      position:relative;
+    }
+
+  .event-image-wrapper {
+    position:absolute;
+    right: -50px;
+    top:-50px;
+  }
+
+  .event-image-wrapper img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+  }
 
     .heading {
         font-family: 'Inter', sans-serif;
@@ -118,15 +134,16 @@ export function getHtml(parsedReq: ParsedRequest) {
         ${getCss(theme, fontSize)}
     </style>
     <body>
-        <div>
+        <div class="main-wrapper">
             <div class="spacer">
             <div class="earth-logo">
               <img src="https://earthackney.co.uk/wp-content/themes/earthackney/_/img/logo.svg" />
             </div>
-            <div class="logo-wrapper">
+            <div class="event-image-wrapper">
 
                 ${images.map((img, i) =>
-                    getPlusSign(i) + getImage(img, widths[i], heights[i])
+                    //getPlusSign(i) + getImage(img, widths[i], heights[i])
+                    getImage(img, widths[i], heights[i])
                 ).join('')}
 
             </div>
