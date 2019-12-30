@@ -43,6 +43,10 @@ function getCss(theme: string, fontSize: string) {
         src: url(data:font/woff2;charset=utf-8;base64,${mono})  format("woff2");
       }
 
+    html {
+      background: ${theme};
+    }
+
     body {
         /* background: ${background}; */
         background: #FFF;
