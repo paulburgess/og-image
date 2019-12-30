@@ -44,9 +44,8 @@ function getCss(theme: string, fontSize: string) {
       }
 
     body {
-        background: ${background};
-      
-        background-size: 100px 100px;
+        /* background: ${background}; */
+        background: #FFF;
         height: 100vh;
         display: flex;
         text-align: center;
@@ -75,6 +74,11 @@ function getCss(theme: string, fontSize: string) {
 
     .logo {
         margin: 0 75px;
+    }
+
+    .earth-logo {
+      width: 80px;
+      height:80px;
     }
 
     .plus {
@@ -116,10 +120,15 @@ export function getHtml(parsedReq: ParsedRequest) {
     <body>
         <div>
             <div class="spacer">
+            <div class="earth-logo">
+              <img src="https://earthackney.co.uk/wp-content/themes/earthackney/_/img/logo.svg" />
+            </div>
             <div class="logo-wrapper">
+
                 ${images.map((img, i) =>
                     getPlusSign(i) + getImage(img, widths[i], heights[i])
                 ).join('')}
+
             </div>
             <div class="spacer">
             <div class="heading">${emojify(
