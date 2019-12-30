@@ -107,9 +107,17 @@ function getCss(theme: string, fontSize: string) {
   }
 
 
+  /* Earth logo */
+  .image-wrapper img:nth-child(1) {
+    top:0;
+    left:0;
+    width: 400px;
+    height: 400px;
+  }
+
 
   /* Event/artist logo */
-  .image-wrapper img:not([src*=logo.svg]) {
+  .image-wrapper img:nth-child(2) {
     border-radius: 50%;
     width: 1000px;
     height: 1000px;
@@ -117,13 +125,6 @@ function getCss(theme: string, fontSize: string) {
     right:-100px;
   }
 
-  /* Earth logo */
-  .image-wrapper img[src*=logo.svg] {
-    top:0;
-    left:0;
-    width: 400px;
-    height: 400px;
-  }
 
     .heading {
 
