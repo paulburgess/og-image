@@ -109,7 +109,7 @@ function getCss(theme: string, fontSize: string) {
 
 
   /* Event/artist logo */
-  .image-wrapper img {
+  .image-wrapper img:not([src*=logo.svg]) {
     border-radius: 50%;
     width: 1000px;
     height: 1000px;
