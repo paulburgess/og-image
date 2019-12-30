@@ -45,10 +45,10 @@ function getArray(stringOrArray: string[] | string): string[] {
 }
 
 function getDefaultImages(images: string[], theme: Theme): string[] {
-    if (images.length > 0 && images[0] && images[0].startsWith('https://assets.zeit.co/image/upload/front/assets/design/')) {
+    if (images.length > 0 && images[0] && images[0].startsWith('https://earthackney.co.uk/wp-content/themes/earthackney/_/img/')) {
         return images;
     }
     return theme === 'light'
-    ? ['https://assets.zeit.co/image/upload/front/assets/design/zeit-black-triangle.svg']
-    : ['https://assets.zeit.co/image/upload/front/assets/design/zeit-white-triangle.svg'];
+    ? ['https://earthackney.co.uk/wp-content/themes/earthackney/_/img/logo.svg'] // black
+    : ['https://earthackney.co.uk/wp-content/themes/earthackney/_/img/logo.svg']; // white
 }
