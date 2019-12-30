@@ -32,7 +32,7 @@ export function parseRequest(req: IncomingMessage) {
         theme: theme === 'dark' ? 'dark' : 'light',
         md: md === '1' || md === 'true',
         fontSize: fontSize || '96px',
-        bgcolor: bgcolor || '#eeeeee',
+        bgcolor: bgcolor === '#eee' ? '#eee' : 'red',
         images: getArray(images),
         widths: getArray(widths),
         heights: getArray(heights),
