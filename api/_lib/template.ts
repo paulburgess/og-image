@@ -121,7 +121,7 @@ function getCss(theme: string, fontSize: string) {
     border-radius: 50%;
     width: 1000px;
     height: 1000px;
-    top:-100px;
+    top:-140px;
     right:-100px;
   }
 
@@ -133,7 +133,7 @@ function getCss(theme: string, fontSize: string) {
         font-size: 90px;
         font-style: normal;
         color: ${foreground};
-        line-height: 100%;
+        line-height: 120%;
     }`;
 }
 
