@@ -366,7 +366,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
                         label: `Add Image ${images.length + 1}`,
                         onclick: () => {
                             const nextImage = images.length === 1
-                                ? 'https://cdn.jsdelivr.net/gh/remojansen/logo.ts@master/ts.svg'
+                                ? 'https://earthackney.co.uk/wp-content/uploads/2019/09/Bat-For-Lashes-credit-Logan-White-e1568385936407-400x400.png'
                                 : '';
                             setLoadingState({ images: [...images, nextImage] })
                         }
