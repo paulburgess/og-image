@@ -11,7 +11,7 @@ const rglr = readFileSync(`${__dirname}/../_fonts/Inter-Regular.woff2`).toString
 const bold = readFileSync(`${__dirname}/../_fonts/Inter-Bold.woff2`).toString('base64');
 const mono = readFileSync(`${__dirname}/../_fonts/Vera-Mono.woff2`).toString('base64');
 
-function getCss(theme: string, fontSize: string) {
+function getCss(theme: string, fontSize: string, bgColor: string) {
     let background = 'white';
     let foreground = 'black';
   //  let radial = 'lightgray';
@@ -44,7 +44,8 @@ function getCss(theme: string, fontSize: string) {
       }
 
     body {
-        background: ${background};
+        background-color: ${background};
+        background: ${sanitizeHtml(bgcolor)};
         background-size: 100px 100px;
         height: 100vh;
         display: flex;
@@ -103,7 +104,7 @@ function getCss(theme: string, fontSize: string) {
 }
 
 export function getHtml(parsedReq: ParsedRequest) {
-    const { text, theme, md, fontSize, images, widths, heights } = parsedReq;
+    const { text, theme, md, fontSize, images, widths, heights, bgcolor } = parsedReq;
     return `<!DOCTYPE html>
 <html>
     <meta charset="utf-8">
