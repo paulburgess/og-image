@@ -49,12 +49,12 @@ function getCss(theme: string, fontSize: string) {
         height: 100vh;
         width:100%;
         position:relative;
-        margin:0;
+        margin:60px;
     }
 
     code {
         color: #D400FF;
-        font-family: 'Vera';
+        font-family: 'Arial', sans-serif;
         white-space: pre-wrap;
         letter-spacing: -5px;
     }
