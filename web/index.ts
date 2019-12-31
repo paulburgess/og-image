@@ -327,6 +327,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
                 ...images.slice(1).map((image, i) => H(Field, {
                     label: `Image ${i + 2}`,
                     input: H('div',
+                      { className: 'image-yo' },
                         H(TextInput, {
                             value: image,
                             oninput: (val: string) => {
