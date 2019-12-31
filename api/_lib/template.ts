@@ -18,8 +18,8 @@ function getCss(theme: string, fontSize: string) {
   //  let radial = 'lightgray';
 
     if (theme === 'dark') {
-        background = 'black';
-        foreground = 'white';
+        // background = 'black';
+        // foreground = 'white';
   //      radial = 'dimgray';
     }
     return `
@@ -47,7 +47,7 @@ function getCss(theme: string, fontSize: string) {
 
 
     body {
-        /* background: ${background}; */
+      
         background: #FFF;
         height: 100vh;
         width:100%;
