@@ -82,8 +82,8 @@ function getCss(theme: string, fontSize: string) {
     }
 
     .earth-logo {
-      width: 80px;
-      height:80px;
+      width: 70px;
+      height:70px;
     }
 
     .plus {
