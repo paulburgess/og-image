@@ -54,6 +54,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
         background-size: auto 140%;
         background-position: -150px center;
+        background-repeat: no-repeat;
         height: 100vh;
         width:100%;
         position:relative;
