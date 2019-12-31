@@ -12,15 +12,15 @@ const bold = readFileSync(`${__dirname}/../_fonts/Inter-Bold.woff2`).toString('b
 const mono = readFileSync(`${__dirname}/../_fonts/Vera-Mono.woff2`).toString('base64');
 
 function getCss(theme: string, fontSize: string) {
-    let background = 'white';
-    let foreground = 'black';
-  //  let radial = 'lightgray';
-
-    if (theme === 'dark') {
-        background = 'black';
-        foreground = 'white';
-  //      radial = 'dimgray';
-    }
+  //   let background = 'white';
+  //   let foreground = 'black';
+  // //  let radial = 'lightgray';
+  //
+  //   if (theme === 'dark') {
+  //       background = 'black';
+  //       foreground = 'white';
+  // //      radial = 'dimgray';
+  //   }
     return `
     @font-face {
         font-family: 'Inter';
@@ -48,7 +48,7 @@ function getCss(theme: string, fontSize: string) {
     body {
         /* background: ${background}; */
         /* background: #FFF; */
-        background: red;
+        background: ${theme};
         height: 100vh;
         width:100%;
         position:relative;
