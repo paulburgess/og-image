@@ -325,9 +325,10 @@ const App = (_: any, state: AppState, setState: SetState) => {
                         )
                     ),
                 }),
-                ...images.slice(1).map((image, i) => H(Field, {
+                ...images.slice(1).map((image, i) => H(Field,
+                  { className: 'image-label' },  
+                  {
                     label: `Image ${i + 2}`,
-                    { className: 'image-label' },
                     input: H('div',
                       { className: 'image-url' },
                         H(TextInput, {
