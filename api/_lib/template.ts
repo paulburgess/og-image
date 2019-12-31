@@ -68,9 +68,6 @@ function getCss(theme: string, fontSize: string) {
         content: '\`';
     }
 
-.field-flex {
-  display:none;
-}
 
     .logo-wrapper {
         display: flex;
