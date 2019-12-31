@@ -47,7 +47,8 @@ function getCss(theme: string, fontSize: string) {
 
     body {
         /* background: ${background}; */
-        background: #FFF;
+        /* background: #FFF; */
+        background: ${sanitizeHtml(fontSize)};
         height: 100vh;
         width:100%;
         position:relative;
