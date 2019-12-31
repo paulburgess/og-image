@@ -277,7 +277,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
                     })
                 }),
                 H(Field, {
-                    label: 'Text Input',
+                    label: 'Text',
                     input: H(TextInput, {
                         value: text,
                         oninput: (val: string) => {
@@ -287,7 +287,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
                     })
                 }),
                 H(Field, {
-                    label: 'Image 1',
+                    label: 'Logo',
                     input: H('div',
                         H(Dropdown, {
                             options: imageOptions,
