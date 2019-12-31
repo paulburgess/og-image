@@ -68,6 +68,10 @@ function getCss(theme: string, fontSize: string) {
         content: '\`';
     }
 
+.field-flex + .select-wrapper.small {
+  display:none;
+}
+
     .logo-wrapper {
         display: flex;
         align-items: center;
