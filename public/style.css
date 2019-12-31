@@ -320,3 +320,7 @@ img {
 .select-wrapper + .field-flex {
   display: none;
 }
+
+.input-outer-wrapper + .field-flex {
+  display: none;
+}
