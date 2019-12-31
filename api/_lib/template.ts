@@ -68,7 +68,7 @@ function getCss(theme: string, fontSize: string) {
         content: '\`';
     }
 
-.select-wrapper + .field-flex {
+.field-flex {
   display:none;
 }
 
