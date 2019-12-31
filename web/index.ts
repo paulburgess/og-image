@@ -130,7 +130,7 @@ const fileTypeOptions: DropdownOption[] = [
     { text: 'JPEG', value: 'jpeg' },
 ];
 
-const fontSizeOptions: DropdownOption[] = Array
+const bgColorOptions: DropdownOption[] = Array
     .from({ length: 10 })
     .map((_, i) => i * 25)
     .filter(n => n > 0)
@@ -204,7 +204,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
     };
     const {
         fileType = 'png',
-        fontSize = '60px',
+        bgColor = '60px',
         theme = 'light',
         md = true,
         text = '**Bat for Lashes**<br>9th Jan 2020',
@@ -223,7 +223,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
     url.pathname = `${encodeURIComponent(text)}.${fileType}`;
     url.searchParams.append('theme', theme);
     url.searchParams.append('md', mdValue);
-    url.searchParams.append('fontSize', fontSize);
+    url.searchParams.append('bgColor', bgColor);
     for (let image of images) {
         url.searchParams.append('images', image);
     }
@@ -263,9 +263,9 @@ const App = (_: any, state: AppState, setState: SetState) => {
                 H(Field, {
                     label: 'Font Size',
                     input: H(Dropdown, {
-                        options: fontSizeOptions,
-                        value: fontSize,
-                        onchange: (val: string) => setLoadingState({ fontSize: val })
+                        options: bgColorOptions,
+                        value: bgColor,
+                        onchange: (val: string) => setLoadingState({ bgColor: val })
                     })
                 }),
                 H(Field, {

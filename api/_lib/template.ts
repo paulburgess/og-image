@@ -11,7 +11,7 @@ const rglr = readFileSync(`${__dirname}/../_fonts/Inter-Regular.woff2`).toString
 const bold = readFileSync(`${__dirname}/../_fonts/Inter-Bold.woff2`).toString('base64');
 const mono = readFileSync(`${__dirname}/../_fonts/Vera-Mono.woff2`).toString('base64');
 
-function getCss(theme: string, fontSize: string) {
+function getCss(theme: string, bgColor: string) {
     let background = 'white';
     let foreground = 'black';
   //  let radial = 'lightgray';
@@ -48,7 +48,7 @@ function getCss(theme: string, fontSize: string) {
     body {
         /* background: ${background}; */
         /* background: #FFF; */
-        background: ${sanitizeHtml(fontSize)};
+        background: ${sanitizeHtml(bgColor)};
         height: 100vh;
         width:100%;
         position:relative;
@@ -133,7 +133,7 @@ function getCss(theme: string, fontSize: string) {
     .heading {
 
         font-family: 'Arial', sans-serif;
-        /* font-size: ${sanitizeHtml(fontSize)}; */
+        /* font-size: ${sanitizeHtml(bgColor)}; */
         font-size: 90px;
         font-style: normal;
         color: ${foreground};
@@ -142,14 +142,14 @@ function getCss(theme: string, fontSize: string) {
 }
 
 export function getHtml(parsedReq: ParsedRequest) {
-    const { text, theme, md, fontSize, images, widths, heights } = parsedReq;
+    const { text, theme, md, bgColor, images, widths, heights } = parsedReq;
     return `<!DOCTYPE html>
 <html>
     <meta charset="utf-8">
     <title>Earth OG Image Generator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        ${getCss(theme, fontSize)}
+        ${getCss(theme, bgColor)}
     </style>
     <body>
 
