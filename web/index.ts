@@ -239,6 +239,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
         H('div',
             { className: 'pull-left' },
             H('div',
+
                 H(Field, {
                     label: 'Theme',
                     input: H(Dropdown, {
@@ -326,8 +327,9 @@ const App = (_: any, state: AppState, setState: SetState) => {
                 }),
                 ...images.slice(1).map((image, i) => H(Field, {
                     label: `Image ${i + 2}`,
+                    { className: 'image-label' },
                     input: H('div',
-                      { className: 'image-yo' },
+                      { className: 'image-url' },
                         H(TextInput, {
                             value: image,
                             oninput: (val: string) => {
