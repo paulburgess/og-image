@@ -50,7 +50,7 @@ function getCss(theme: string, bgColor: string) {
         /* background: #FFF; */
         background-color: #FFF;
 
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 403 418'%3E%3Cpath fill='${sanitizeHtml(bgColor)}' d='M285 95.1c19.1 9.7 40.3 18.6 59.1 35.7 18.7 17.1 35 42.4 46.5 77.7 11.5 35.2 18.3 80.4 2.2 114.6-16 34.1-54.9 57.2-98.7 75.6-43.8 18.4-92.5 32.2-115.5 4.4-23.1-27.8-20.3-97.2-47.7-136.3-27.4-39.1-84.9-47.9-111.4-75.7C-7 163.3-2.6 116.6 15.8 76.3 34.2 36 66.6 2 105 1c38.3-1 82.7 31 113.3 52.3 30.6 21.3 47.6 32 66.7 41.8z'/%3E%3C/svg%3E%0A");
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 403 418'%3E%3Cpath fill='#${sanitizeHtml(bgColor)}' d='M285 95.1c19.1 9.7 40.3 18.6 59.1 35.7 18.7 17.1 35 42.4 46.5 77.7 11.5 35.2 18.3 80.4 2.2 114.6-16 34.1-54.9 57.2-98.7 75.6-43.8 18.4-92.5 32.2-115.5 4.4-23.1-27.8-20.3-97.2-47.7-136.3-27.4-39.1-84.9-47.9-111.4-75.7C-7 163.3-2.6 116.6 15.8 76.3 34.2 36 66.6 2 105 1c38.3-1 82.7 31 113.3 52.3 30.6 21.3 47.6 32 66.7 41.8z'/%3E%3C/svg%3E%0A");
 
         background-size: auto 140%;
         background-position: -150px center;
