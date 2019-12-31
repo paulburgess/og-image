@@ -48,7 +48,7 @@ function getCss(theme: string, fontSize: string) {
     body {
         /* background: ${background}; */
         /* background: #FFF; */
-        background: ${theme};
+        background: red;
         height: 100vh;
         width:100%;
         position:relative;
