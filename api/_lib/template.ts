@@ -166,7 +166,6 @@ export function getHtml(parsedReq: ParsedRequest) {
 
 
             <div class="heading">
-            ${theme}<br>
             ${emojify(
                 md ? marked(text) : sanitizeHtml(text)
             )}
