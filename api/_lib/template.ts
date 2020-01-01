@@ -129,6 +129,7 @@ function getCss(theme: string, bgColor: string) {
     bottom:-100px;
     width: auto;
     height: 90vh;
+    opacity:0.3;
   }
 
   .bg-blob * {
