@@ -143,8 +143,9 @@ const markdownOptions: DropdownOption[] = [
 
 const imageLightOptions: DropdownOption[] = [
     { text: 'Earth', value: 'https://earthackney.co.uk/wp-content/themes/earthackney/_/img/logo.svg' },
-    // { text: 'Next.js', value: 'https://assets.zeit.co/image/upload/front/assets/design/nextjs-black-logo.svg' },
-    // { text: 'Hyper', value: 'https://assets.zeit.co/image/upload/front/assets/design/hyper-color-logo.svg' },
+    { text: 'Earth Hall', value: 'https://earthackney.co.uk/wp-content/themes/earthackney/_/img/logo--earth-hall.svg' },
+    { text: 'Earth Theatre', value: 'https://earthackney.co.uk/wp-content/themes/earthackney/_/img/logo--earth-theatre.svg' },
+    { text: 'Earth Kitchen', value: 'https://earthackney.co.uk/wp-content/themes/earthackney/_/img/logo--earth-kitchen.svg' },
 ];
 
 const imageDarkOptions: DropdownOption[] = [
