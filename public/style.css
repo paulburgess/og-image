@@ -336,3 +336,7 @@ img {
 .pull-left > div .field:nth-child(8) {
   display: none;
 }
+
+h1 {
+  margin-bottom: 60px;
+}
