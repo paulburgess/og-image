@@ -130,11 +130,11 @@ const fileTypeOptions: DropdownOption[] = [
     { text: 'JPEG', value: 'jpeg' },
 ];
 
-const bgColorOptions: DropdownOption[] = Array
-    .from({ length: 10 })
-    .map((_, i) => i * 25)
-    .filter(n => n > 0)
-    .map(n => ({ text: n + 'px', value: n + 'px' }));
+// const bgColorOptions: DropdownOption[] = Array
+//     .from({ length: 10 })
+//     .map((_, i) => i * 25)
+//     .filter(n => n > 0)
+//     .map(n => ({ text: n + 'px', value: n + 'px' }));
 
 const markdownOptions: DropdownOption[] = [
     { text: 'Plain Text', value: '0' },
@@ -262,19 +262,19 @@ const App = (_: any, state: AppState, setState: SetState) => {
                 }),
                 H(Field, {
                     label: 'Blob colour',
-                    // input: H(TextInput, {
-                    //     value: bgColor,
-                    //     oninput: (val: string) => {
-                    //         console.log('oninput ' + val);
-                    //         setLoadingState({ bgColor: val, overrideUrl: url });
-                    //     }
-                    // })
-
-                    input: H(Dropdown, {
-                        options: bgColorOptions,
+                    input: H(TextInput, {
                         value: bgColor,
-                        onchange: (val: string) => setLoadingState({ bgColor: val })
+                        oninput: (val: string) => {
+                            console.log('oninput ' + val);
+                            setLoadingState({ bgColor: val, overrideUrl: url });
+                        }
                     })
+
+                    // input: H(Dropdown, {
+                    //     options: bgColorOptions,
+                    //     value: bgColor,
+                    //     onchange: (val: string) => setLoadingState({ bgColor: val })
+                    // })
                 }),
                 H(Field, {
                     label: 'Text Type',
