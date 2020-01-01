@@ -117,20 +117,17 @@ function getCss(theme: string, bgColor: string) {
     top:0;
     left:-40px;
     width: 400px;
-    height: 400px;
+    height: auto;
   }
 
-.image-wrapper img[src*="kitchen"]:nth-child(1),
-.image-wrapper img[src*="hall"]:nth-child(1),
-.image-wrapper img[src*="theatre"]:nth-child(1) {
-
+.image-wrapper img[src*="kitchen"]:nth-child(1) {
   width: 550px;
-  height:auto;
-
-
 }
 
-
+.image-wrapper img[src*="hall"]:nth-child(1),
+.image-wrapper img[src*="theatre"]:nth-child(1) {
+  width: 590px;
+}
 
 
 
