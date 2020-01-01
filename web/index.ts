@@ -204,7 +204,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
     };
     const {
         fileType = 'png',
-        bgColor = '60px',
+        bgColor = '#5C884B',
         theme = 'light',
         md = true,
         text = '**Bat for Lashes**<br>9th Jan 2020',
