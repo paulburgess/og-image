@@ -120,6 +120,17 @@ function getCss(theme: string, bgColor: string) {
     height: 400px;
   }
 
+.image-wrapper img[src*="kitchen"]:nth-child(1),
+.image-wrapper img[src*="hall"]:nth-child(1),
+.image-wrapper img[src*="theatre"]:nth-child(1) {
+
+  width: 550px;
+  height:auto;
+
+
+}
+
+
 
 
 
