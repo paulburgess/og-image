@@ -261,12 +261,16 @@ const App = (_: any, state: AppState, setState: SetState) => {
                     })
                 }),
                 H(Field, {
-                    label: 'Font Size',
-                    input: H(Dropdown, {
-                        options: bgColorOptions,
+                    label: 'Blob colour',
+
+                    input: H(TextInput, {
                         value: bgColor,
+                        oninput: (val: string) => {
+                            console.log('oninput ' + val);
                         onchange: (val: string) => setLoadingState({ bgColor: val })
+                        }
                     })
+
                 }),
                 H(Field, {
                     label: 'Text Type',

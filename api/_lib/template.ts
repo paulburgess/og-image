@@ -56,6 +56,7 @@ function getCss(theme: string, bgColor: string) {
         display:flex;
         justify-content: flex-start;
         align-items: flex-end;
+        overflow:hidden;
     }
 
     code {
@@ -124,10 +125,10 @@ function getCss(theme: string, bgColor: string) {
 
   .bg-blob {
     position: absolute;
-    right:-100px;
-    top:-100px;
+    right:80px;
+    bottom:-100px;
     width: auto;
-    height: calc(100vh + 200px)
+    height: 90vh;
   }
 
   .bg-blob * {
