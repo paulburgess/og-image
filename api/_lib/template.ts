@@ -120,14 +120,15 @@ function getCss(theme: string, bgColor: string) {
     height: auto;
   }
 
-.image-wrapper img[src*="kitchen"]:nth-child(1) {
+.image-wrapper img[src*="kitchen"]:nth-child(1),
+.image-wrapper img[src*="theatre"]:nth-child(1) {
   width: 550px;
 }
 
-.image-wrapper img[src*="hall"]:nth-child(1),
-.image-wrapper img[src*="theatre"]:nth-child(1) {
-  width: 590px;
+.image-wrapper img[src*="hall"]:nth-child(1) {
+  width: 500px;
 }
+
 
 
 
