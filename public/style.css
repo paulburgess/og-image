@@ -283,6 +283,9 @@ img {
     border-color: #ddd;
 }
 
+.image-wrapper img {
+  display: block;
+}
 
 @media (max-width: 1000px) {
     .field {
