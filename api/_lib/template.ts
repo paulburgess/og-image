@@ -46,6 +46,7 @@ function getCss(theme: string, bgColor: string) {
 
 
     body {
+      
         /* background: ${background}; */
         background-color: #FFF;
 
