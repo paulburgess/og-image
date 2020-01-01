@@ -262,7 +262,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
                 }),
                 H(Field, {
                     label: 'Blob colour',
-                    input: H(Colorpicker, {
+                    input: H(ColorPicker, {
                         value: bgColor,
                         oninput: (val: string) => {
                             console.log('oninput ' + val);
